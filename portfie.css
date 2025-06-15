@@ -189,6 +189,17 @@ footer {
     margin-top: 60px;
 }
 
+.social-caption a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .social-caption a:hover {
+    color: #ff69b4; /* pink, or any accent color you like */
+  }
+  
+
 .social-block {
     display: flex;
     flex-direction: column;
