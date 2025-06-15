@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-bottom: 100px; /* prevents footer overlap */
+}
+
+.homepage {
+    background-image: url("backgroundpic.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    position: relative; 
+    padding-top: 80px; 
+    box-sizing: border-box;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+.hero-text h1,
+.hero-text h2 {
+    font-family: 'Montserrat', sans-serif, Arial;
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+
+.hero-text p {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav a:hover {
+    color: #FFD700;
+}
+
+.nav a.active {
+    border-bottom: 2px solid #FFD700;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: black;
+    font-family: 'Lora', serif;
+}
+
+.about-img {
+    float: right;
+    margin: 40px;
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.aboutme{
+    background-color: beige;
+}
+
+.aboutmec {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: 40px;
+    padding: 40px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-align: left;
+}
+
+.aboutmec h1 {
+    font-size: 85px;
+}
+
+.aboutmec h2 {
+    font-style: italic;
+}
+
+.contactme{
+    background-color: beige;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+    gap: 40px;
+}
+
+.contact-form {
+    flex: 1;
+    font-family: 'Lora', serif;
+    color: black;
+}
+
+.contactme h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 75px;
+}
+
+.contactme h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.vidsamp{
+    background-color: beige;
+}
+
+.vidsamps {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.vidsamps h1{
+    font-size: 75px;
+}
+
+.vidsamps p{
+    font-style: italic;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.video-grid video {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.contact-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.social-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.social-img {
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.social-img:hover {
+    transform: scale(1.05);
+}
+
+.social-caption {
+    margin-top: 10px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    color: black; /* adjust if you have a dark background */
+}
+
+@media screen and (max-width: 600px) {
+    .contact-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-img {
+        width: 100px;
+    }
+
+    .contactme h1 {
+        font-size: 40px;
+    }
+
+    .hero-text h1,
+    .hero-text h2 {
+        font-size: 50px;
+    }
+
+    .video-grid video {
+        width: 100%;
+    }
+
+    .social-caption {
+        font-size: 12px;
+    }
+
+    .vidsamps h1 {
+        font-size: 40px;
+    }
+}
+
+a,
+button,
+input[type="submit"] {
+    transition: all 0.3s ease;
+}
